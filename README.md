@@ -52,3 +52,15 @@ cypress-saucedemo/
 │── .gitignore
 │── README.md
 │── cypress/reports/ (relatórios gerados)
+
+ 🚀 Como Rodar o Projeto
+git clone https://github.com/seu-usuario/cypress-saucedemo.git
+
+npm install
+
+npx cypress run
+
+## Gerar Relatório
+npx mochawesome-merge cypress/reports/*.json > cypress/reports/report.json
+npx marge cypress/reports/report.json -f report -o cypress/reports
+
